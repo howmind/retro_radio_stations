@@ -59,6 +59,8 @@ jobs:
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: Radio Data ${{ steps.tag.outputs.tag }}
-          files: assets/radio/radiostations.json.zip
+          files: |
+            assets/radio/radiostations.json.zip
+            assets/radio/radiostations.json.zip.sha256
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
