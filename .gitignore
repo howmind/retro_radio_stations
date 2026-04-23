@@ -1,0 +1,32 @@
+# ===== Dart / Flutter common =====
+.dart_tool/
+.packages
+.pub/
+build/
+pubspec.lock
+
+# ===== Generated files =====
+*.g.dart
+*.freezed.dart
+
+# ===== Logs =====
+*.log
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+
+# ===== Output files (your script) =====
+radiostations.json
+radiostations.json.zip
+assets/radio/radiostations.json.zip
+assets/radio/radiostations.json.zip.sha256
+
+# ===== Temporary files =====
+*.tmp
+*.temp

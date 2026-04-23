@@ -1,0 +1,13 @@
+name: retro_radio_stations
+description: 'A Stream Radio Station Tool'
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+10
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  archive: ^4.0.2
+  radio_browser_api:
