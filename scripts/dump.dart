@@ -7,7 +7,7 @@ import 'package:radio_browser_api/radio_browser_api.dart';
 Future<void> dumpStations() async {
   print('[${DateTime.now()}] dump start .....');
   try {
-    String? host = 'nl1.api.radio-browser.info';
+    String? host = 'all.api.radio-browser.info';
     print('host: $host');
     var rb = RadioBrowserApi.fromHost(host);
     print('[${DateTime.now()}] --------- download start ---------');

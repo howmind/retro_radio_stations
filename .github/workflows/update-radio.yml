@@ -21,9 +21,17 @@ jobs:
 
       - name: Run script
         run: dart run scripts/dump.dart
+        continue-on-error: false
 
-      - name: Verify file
+      - name: Show dump files
         run: ls -lah assets/radio/
+
+      - name: Verify zip exists
+        run: |
+          if [ ! -f assets/radio/radiostations.json.zip ]; then
+            echo "ZIP file missing - build failed"
+            exit 1
+          fi
 
       - name: Generate SHA256 checksum
         run: |
